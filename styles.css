@@ -1,0 +1,88 @@
+body { 
+    background-color: white;
+    color: darkcyan;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:14px;
+}
+
+h1 {
+    font-size:20px;
+    font-family:Arial;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 60px auto;
+    grid-template-areas: 
+        "n n n n n n n n n n"
+        "c c c c c c c c c c";
+}
+
+.nav {
+    grid-area: n;
+    background-color: darkblue;
+    color: white;
+}
+
+.content {
+    grid-area: c;
+    background-color: palegreen;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+ul.navlist {
+    list-style-type: none;
+}
+
+ul.navlist li {
+    display: inline;
+    padding: 5px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white
+}
+
+.nav li :first-child {
+    padding-left: 0px;
+    }
+
+.currentpage {
+    background-color: rgb(76, 76, 104);
+    }
+
+.nav input[type=text]:focus {
+        border: 3px solid aqua;
+      }   
+
+li :hover {
+    background-color: lightblue;
+    }
+
+.link1 :hover{
+    font-weight: bold;
+    color: lightblue;
+}
+
+.link2 :active{
+    font-style: italic;
+    color: red;
+}   
+    
+.link3 :visited{
+    color: yellow;
+} 
+
+.content input[type=text]:focus {
+    color: green;
+    font-size: 20px;
+}
+
+    
